@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    .main{
+      background-color: darkgreen;
+      width: 2000px;
+      height: 2000px;
+
+    }
+    .red-circle {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+
+    .blue-box {
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+    .black-circle{
+      background-color: black;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      position: fixed;
+    }
+
+    .bar{
+      background-color: brown;
+      position: sticky;
+      width: 1440px;
+      height: 100px;
+      top: 0;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="bar"><h1>Hello World</h1></div>
+  <div class="main">
+  <div class="blue-box">
+    <div class="red-circle"></div>
+    <div class="black-circle"></div>
+  </div>
+</div>
+</body>
+
+</html>

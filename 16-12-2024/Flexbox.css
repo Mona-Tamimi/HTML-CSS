@@ -1,0 +1,114 @@
+div div {
+    background-color: #ddd;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+/* Flex Direction Row*/
+
+
+.flex1 {
+    display: flex;
+    background-color: red;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+}
+
+
+
+/* Flex Direction Column*/
+
+.flex2 {
+    display: flex;
+    background-color: red;
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+   
+}
+
+
+
+
+
+/* Flex Wrap*/
+
+.flex3 {
+    display: flex;
+    background-color: red;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap; 
+}
+
+
+/*  justify-content*//*move in row*/
+
+.flex4 {
+    background-color: red;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+
+
+/*  align-content*/ /* Only when there are multiple lines */
+
+
+.flex6 {
+    background-color: red;
+    display: flex;
+    height: 400px; 
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    align-content: space-between;
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: stretch; */
+    gap: 50px;
+
+    
+}
+
+
+
+
+/*  align-items*/  /* Aligns the items vertically */
+
+.flex5 {
+    background-color: red;
+    display: flex;
+    height: 200px; /*to explain the align items*/
+
+    /* align-items: flex-start; */
+    align-items: center;  
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+
+}
+
+
+
+
+/*  Gap*/
+
+.flex7 {
+    background-color: red;
+    display: flex;
+    /* gap: 100px; */
+
+    /* row-gap: 100px; */
+    column-gap: 100px;
+
+}

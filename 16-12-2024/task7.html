@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container1{
+            border: 3px dashed black;
+            width: fit-content;
+            display: flex;
+            position: static;
+        }
+        .grid-container2{
+            border: 3px dashed black;
+            width: fit-content;
+            display: flex;
+            /* position: relative; */
+        }
+        .grid-container3{
+            border: 3px dashed black;
+            width: fit-content;
+            display: flex;
+            position: relative;
+        }
+        .grid-item1{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 2px;
+        }
+        .grid-item2 {
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 2px;
+        }
+        .grid-item3 {
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 2px;
+        }
+        #relative {
+            position: relative;
+            top: 50px;
+            left: -30px;
+        }
+        #absolute {
+            position: absolute;
+            left: 59px;
+        }
+    </style>
+</head>
+<body>
+    <h2> position: static</h2>
+    <div class="grid-container1">
+        <div class="grid-item1">one</div>
+        <div class="grid-item1" style="background-color: green;">two</div>
+        <div class="grid-item1">three</div>  
+        <div class="grid-item1">four</div>
+      </div> <br> <br> <br>
+      <h2> position: relative</h2>
+    <div class="grid-container2">
+        <div class="grid-item2">one</div>
+        <div class="grid-item2" id="relative" style="background-color: green;">two</div>
+        <div class="grid-item2">three</div>  
+        <div class="grid-item2">four</div>
+      </div> <br> <br> <br>
+      <h2> position: absolute</h2>
+    <div class="grid-container3">
+        <div class="grid-item3">one</div>
+        <div class="grid-item3" id="absolute" style="background-color: green;">two</div>
+        <div class="grid-item3">three</div>  
+        <div class="grid-item3">four</div>
+      </div>
+</body>
+</html>
