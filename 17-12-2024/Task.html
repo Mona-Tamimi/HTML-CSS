@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .cards {
+            display: flex;
+            background-color: rgb(78, 43, 4);
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+        .div1 {
+            position: relative;
+            margin: 10px;
+            /* padding: 20px; */
+            width: 30vw;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+            transition: width 2s, height 2s;
+        }
+        .contact {
+            color: white;
+            float:right;
+            width: 50%;
+            height: 150px;
+            background-color: rgb(167, 145, 80);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about {
+            color: white;
+            float: left;
+            width: 50%;
+            height: 150px;
+            background-color: rgb(78, 43, 4);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        span{
+            box-shadow: 3px 2px 3px;
+            background: linear-gradient(to bottom left, rgb(22, 15, 3), rgb(158, 78, 8));
+        }
+        .contact:hover{
+            transform: matrix(1.5,0,0,1.5,-150,0);
+        }
+        .about:hover{
+            transform: matrix(1.5,0,0,1.5,0,-10);
+        }
+        .div1:hover {
+            width: 500px;
+            height: 800px;
+        }
+        .head { transition: all 3s;}
+        .head:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="all" style="background-color: white; margin-left: -8px;">
+                <div style="text-align: center;  height: 350px; background-image: url(headimg.jpg); background-size: contain; color: white; width: 100vw;">
+                   <br><br><br> <h1 class="head">Welcome to Responsive Web</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.</p>
+                    <span style=" border: 1px solid gray; text-align: center; color: white; padding: 7px;">Read more</span>        
+                </div>
+                <div style="text-align: center;height: 150px;">
+                    <h2 style="text-shadow: 6px 6px 2px gray;">Responsive Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.</p>
+                </div>
+                <div class="cards" >
+                    <div class="div1" >
+                        <img src="cardimg.jpg" height="300px" width="100%" >
+                        <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Phasellus mattis dapibus massa nec semper. Nulla metus odio,
+                            fringilla scelerisque elementum sed, accumsan quis leo. </p>
+                        
+                    </div>
+
+                    <div class="div1">
+                        <img src="cardimg2.jpg"  height="300px" width="100%">
+                        <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Phasellus mattis dapibus massa nec semper. Nulla metus odio,
+                            fringilla scelerisque elementum sed, accumsan quis leo. </p>
+
+                    </div>
+
+                    <div class="div1">
+                        <img src="cardimg3.jpg"  height="300px" width="100%" >
+                        <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Phasellus mattis dapibus massa nec semper. Nulla metus odio,
+                            fringilla scelerisque elementum sed, accumsan quis leo. </p>
+                    </div>
+                </div>
+                <div style="text-align: center;height: 150px;">
+                    <h2>Responsive Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.</p>
+                </div>
+                <div style="width: 100vw;height: 400px;" >
+                    <div class="contact">
+                        <h3> contact us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nam venenatis ultrices aliquet. Aliquam erat volutpat.</p>
+                    </div>
+                    <div class="about">
+                        <h3> about us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam venenatis ultrices aliquet. Aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div style="text-align: center;height: 50px;background-color: rgb(114, 87, 57); color: white;margin-top: -266px; width: 100vw;">
+                    <p style="font-size: small; padding-top: 9px;">Lorem ipsum dolor sit amet <br> 
+                        consectetur adipiscing 
+                    </p>
+                </div>
+        </div>
+</body>
+</html>

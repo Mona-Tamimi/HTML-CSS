@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Linear and Radial Gradients</title>
+  <style>
+    /* General styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      color: white;
+      
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    .box {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+    }
+
+    /* Linear Gradients */
+    .linear-default {
+      background: linear-gradient(to bottom, red, blue);
+    }
+
+    .linear-left-right {
+      background: linear-gradient(to right, red, blue);
+    }
+
+    .linear-diagonal {
+      background: linear-gradient(to bottom left, orange, purple);
+    }
+
+    .linear-angle {
+      background: linear-gradient(120deg, yellow, green);
+    }
+
+    .linear-multiple-stops {
+      background: linear-gradient(to top, red, yellow, green, blue, purple);
+    }
+
+    .linear-transparency {
+      background: linear-gradient(to bottom, rgba(255, 0, 0, .7), rgba(0, 0, 255, 0.2));
+    }
+
+    .linear-repeating {
+      background: repeating-linear-gradient(to bottom, red, yellow 30px, red 20px);
+    }
+
+    /* Radial Gradients */
+    .radial-default {
+      background: radial-gradient(circle, red, yellow, blue);
+    }
+
+    .radial-different-stops {
+      background: radial-gradient(circle, red 20%, yellow 50%, green 80%);
+    }
+
+    .radial-set-shape {
+      background: radial-gradient(circle, rgb(14, 194, 44), purple);
+    }
+
+    .radial-closest-side {
+      background: radial-gradient(circle closest-side, red, orange, yellow);
+    }
+
+    .radial-farthest-side {
+      background: radial-gradient(circle farthest-side, red, orange, yellow);
+    }
+
+    .radial-closest-corner {
+      background: radial-gradient(circle closest-corner, green, blue, purple);
+    }
+
+    .radial-farthest-corner {
+      background: radial-gradient(circle farthest-corner, green, blue, purple);
+    }
+
+    .radial-repeating {
+      background: repeating-radial-gradient(e, red, yellow 10%, red 20%);
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Linear and Radial Gradients</h1>
+  
+  <h2>Linear Gradients</h2>
+  <div class="box linear-default">Top to Bottom</div>
+  <div class="box linear-left-right">Left to Right</div>
+  <div class="box linear-diagonal">Diagonal</div>
+  <div class="box linear-angle">Using Angles</div>
+  <div class="box linear-multiple-stops">Multiple Color Stops</div>
+  <div class="box linear-transparency">With Transparency</div>
+  <div class="box linear-repeating">Repeating Gradient</div>
+  
+  <h2>Radial Gradients</h2>
+  <div class="box radial-default">Evenly Spaced Stops</div>
+  <div class="box radial-different-stops">Different Spaced Stops</div>
+  <div class="box radial-set-shape">Set Shape (Ellipse)</div>
+  <div class="box radial-closest-side">Closest Side</div>
+  <div class="box radial-farthest-side">Farthest Side</div>
+  <div class="box radial-closest-corner">Closest Corner</div>
+  <div class="box radial-farthest-corner">Farthest Corner</div>
+  <div class="box radial-repeating">Repeating Gradient</div>
+</body>
+</html>
