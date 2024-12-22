@@ -80,6 +80,9 @@
             color: #EEEEEE;
             font-size: large;
         }
+        /* .nav-item {
+            text-align: right;
+        } */
         .head {
             /* background-color: #89B6BC; */
             width: fit-content;
@@ -106,7 +109,8 @@
         }
         .my-photo {
             margin-top: 2vw;
-            border-radius: 10vw;
+            border-radius: 200vw;
+            margin-left: 4vw;
         }
         .abt {
             margin: 3vw 1vw;
@@ -141,11 +145,12 @@
             font-family: "Dosis", serif;
         }
 
-        .project-card p {
+        .project-card p,.position {
             font-size: 1.5vw;
             color: #555;
             margin: 1vw 0;
             font-family: "Dosis", serif;
+            text-shadow: none;
         }
 
         .project-card:hover {
@@ -232,6 +237,13 @@
             margin: 0 0;
             padding: 0;
         }
+        .logo{
+            position: static;
+            width: 5vw;
+            height: 5vw;
+            margin: 0 0;
+            padding: 0;
+        }
         .icon:hover{
             transform: scale(1.2);
         }
@@ -249,14 +261,14 @@
 </head>
 <body>
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <img src="logo2.png" alt="logo" class="logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#about">About Me</a>
                     </li>
@@ -270,26 +282,26 @@
                         <a class="nav-link" href="#certificates">Certificates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact me </a>
+                        <a class="nav-link" href="#contact">Contact me</a>
                     </li>
                     <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Send message
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: #BA964A;">
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #BA964A;">
                             <li><a class="dropdown-item" href="mailto:munatamimi65@gmail.com" target="_blank">Email</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://wa.me/9620790388120" target="_blank">whatsApp</a></li>
-                            </ul>
+                        </ul>
                     </li>
                 </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
       <!-- 1st Section -->
        <section class="one row">
-        <h1 class="my-name col-7"> Mona M. Tamimi</h1>
+        <h1 class="my-name col-7"> Mona M. Tamimi <br> <p class="position" style="text-align: center;">Full-Stack Web Developer</p></h1>
         <p class="col-5 head">
             "On a journey to becoming <br>a Full-Stack Web Developer,<br> 
             building seamless and <br>scalable web solutions."
@@ -323,6 +335,8 @@
                 <h2>Graduation Project</h2>
                 <p>Real-Time THD Monitoring System using ESP32 and Blynk, focused on real-time power quality analysis with IoT-based remote monitoring.</p>
                 <p><strong>Technologies:</strong> ESP32, Blynk, IoT</p>
+                <a href="https://drive.google.com/file/d/1qZ0_4NvKJaBqDgKHFoOpCeDrAx9yjjhG/view?usp=drivesdk" 
+                   target="_blank">Click to see the report</a>
               </div>
           
               <div class="project-card">
@@ -390,12 +404,12 @@
           <!-- 5th Section -->
            <section class="certificates" id="certificates">
             <h1 class="title">Certificates</h1>
-            <div style="text-align: center; margin: 3vw 0;">
-                 <a href="https://drive.google.com/file/d/1CAkOnqVKhhJdCTSy1MhqlcNNGjmSPm2B/view?usp=drivesdk" target="_blank">HTML</a> <br>
-                 <a href="https://drive.google.com/file/d/1C8K0mc3NxJo3xtOVk-kHTun_GTn5JoCe/view?usp=drivesdk" target="_blank">CSS</a> <br>
-                 <a href="https://drive.google.com/file/d/1CBUrv6lJcKvPP7HFXP8E4wdXIFQrnuJC/view?usp=drivesdk" target="_blank">JavaScript</a> <br>
-                 <a href="https://drive.google.com/file/d/1HutTNjSsZUgCQmWm9HaDiaVwLyAsFSSl/view?usp=drivesdk" target="_blank">Project “MARS-JO Rover”</a> <br>
-                 <a href="https://drive.google.com/file/d/1-_chgXQfQxgRdmZa6epIFVYB-7ZhNHll/view?usp=drivesdk" target="_blank">selling skills</a> <br>
+            <div style="text-align: left; margin: 2vw 0; margin-left: 5vw;">
+                <li> <a href="https://drive.google.com/file/d/1CAkOnqVKhhJdCTSy1MhqlcNNGjmSPm2B/view?usp=drivesdk" target="_blank">HTML</a></li> <br>
+                <li> <a href="https://drive.google.com/file/d/1C8K0mc3NxJo3xtOVk-kHTun_GTn5JoCe/view?usp=drivesdk" target="_blank">CSS</a></li> <br>
+                <li> <a href="https://drive.google.com/file/d/1CBUrv6lJcKvPP7HFXP8E4wdXIFQrnuJC/view?usp=drivesdk" target="_blank">JavaScript</a></li> <br>
+                <li> <a href="https://drive.google.com/file/d/1HutTNjSsZUgCQmWm9HaDiaVwLyAsFSSl/view?usp=drivesdk" target="_blank">Project “MARS-JO Rover”</a></li> <br>
+                <li> <a href="https://drive.google.com/file/d/1-_chgXQfQxgRdmZa6epIFVYB-7ZhNHll/view?usp=drivesdk" target="_blank">selling skills</a></li> <br>
             </div>
 
            </section>
